@@ -1,0 +1,119 @@
+.navbar {
+    z-index: 1;
+    position: relative;
+}
+.jumbotron{
+    background-image: url(gmbr/o12-JYx2nrMrGZo-unsplash.jpg);
+    background-size:cover ;
+    color: white;
+    position: relative;
+}
+
+
+#jumbotron img{
+    border: 2px solid white !important; 
+    box-shadow: 0 0  1px 1px white;
+}
+
+#jumbotron::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 70%;
+  position: absolute; 
+  background-image: linear-gradient(to top,black,rgba(0, 0, 0, 0));
+  bottom: 0; 
+}
+
+
+#jumbotron h1, #jumbotron p{
+    color: white;
+    font-weight: 200;
+    text-shadow: .3px .3px .7px white;
+}
+
+#jumbotron .container{
+    z-index: 2;
+    position: relative;
+}
+
+
+#about h1,#about h5{
+    font-weight: 200;
+}
+
+.container-fluid{
+    background: #eceaea !important;
+    
+}
+
+.carousel-item{
+    height:400px !important;
+    width: 100% !important;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto !important;
+}
+
+.carousel-control-next-icon{
+    
+    left: 100 !important;
+    color: black;
+}
+
+#contact{
+    background: #eceaea !important;
+}
+
+#contact .fab{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#contact .nomor{
+    display: inline-block;
+    margin-top: -30px !important;
+}
+
+#contact .fas{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#contact p{
+
+}
+
+
+
+@media (max-width: 576px) { 
+    .carousel-item{
+        height:400px !important;
+        width: 100% !important;
+    }
+
+    #email{
+        margin-top: 30px;
+    }
+
+    #contact {
+        margin-top: -15px;
+    }
+    
+}
+
+@media (min-width: 992px)  { 
+    .carousel-item{
+        height:700px !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .carousel-item img{
+        width: auto;
+        height: auto !important;
+    }
+    
+ }
